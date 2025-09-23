@@ -22,7 +22,7 @@ public class BankAccountMenu {
                     System.out.println();
                     if (add >0) {
                         System.out.println("Added $" + (Math.round(add*100))/100.0);
-                        balance += (Math.round(balance*100))/100.0;
+                        balance += (Math.round(add*100))/100.0;
                         System.out.println("New balance: $" + (Math.round(balance*100))/100.0);
                     }
                     else {
@@ -49,7 +49,7 @@ public class BankAccountMenu {
                     System.out.println("Goodbye!");
                     run = false;
                     break;
-                    
+
             }
         }
     }
